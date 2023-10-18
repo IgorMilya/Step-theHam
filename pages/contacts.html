@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The page allows you to leave the contacts"/>
+    <meta name="keywords" content="Contacts"/>
+    <meta name="author" content="Ihor Milevskyi"/>
+    <meta name="copyright" content="Copyright © 2023 Ihor Milevskyi"/>
+    <meta name="expires" content="2043-12-31">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <nav class="header_navbar">
+        <div class="header_navbar_add container">
+            <div class="header_navbar_icon">
+                <div class="header_navbar_icon_letter">H</div>
+                <a href="../index.html" class="header_navbar_icon_word">the<span
+                        class="header_navbar_icon_word_color">Ham</span></a>
+            </div>
+
+            <ul class="header_navbar_list">
+                <li class="header_navbar_list_item"><a class="header_navbar_list_item_link"
+                                                       href="../index.html">home</a></li>
+                <li class="header_navbar_list_item"><a class="header_navbar_list_item_link" href="pageMenu.html">Page
+                    Menu</a></li>
+                <li class="header_navbar_list_item"><a class="header_navbar_list_item_link"
+                                                       href="skills.html">Skills</a></li>
+                <li class="header_navbar_list_item"><a class="header_navbar_list_item_link" href="works.html">Works</a>
+                </li>
+                <li class="header_navbar_list_item"><a class="header_navbar_list_item_link active-link"
+                                                       href="contacts.html">Leave the contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="main_background3">
+        <div class="dark_block2">
+            <div class="center-block">
+            <div class="container">
+                <section class="main_content">
+                    <div class="form-container">
+                        <div class="main_text">
+                            <h1 class="main_text_title">Leave Contacts</h1>
+                            <div class="main_text_square"></div>
+                        </div>
+                        <form class="main_data">
+                            <label class="main_data_label">
+                                <input class="main_data_label_gap" name="Name" type="text" placeholder="Name" required>
+                            </label>
+                            <label class="main_data_label">
+                                <input class="main_data_label_gap" name="LastName" type="text" placeholder="Last Name"
+                                       required>
+                            </label>
+                            <label class="main_data_label">
+                                <input class="main_data_label_gap" name="Email" type="email" placeholder="Email"
+                                       required>
+                            </label>
+                            <label class="main_data_label">
+                                <input class="main_data_label_gap" name="Password" type="password"
+                                       placeholder="Choose Password"
+                                       required>
+                            </label>
+                            <label class="main_data_label">
+                                <input class="main_data_label_gap" name="ConfirmPassword" type="password"
+                                       placeholder="Confirm Password" required>
+                            </label>
+                            <p class="main_data_radio_text">Gender:</p>
+                            <div class="main_data_radio">
+                                <label class="main_data_radio_label">
+                                    Male:
+                                    <input class="main_data_radio_label_input" type="radio" name="gender"
+                                           value="male">
+                                </label>
+
+                                <label class="main_data_radio_label">
+                                    Female:
+                                    <input class="main_data_radio_label_input" type="radio" name="gender"
+                                           value="female">
+                                </label>
+                                <label class="main_data_radio_label">
+                                    Other:
+                                    <input class="main_data_radio_label_input" type="radio" name="gender"
+                                           value="other">
+                                </label>
+                            </div>
+                            <label class="main_data_dropdown">Country:
+                                <select class="main_data_dropdown_select" name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="uk">UK</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </label>
+                            <label class="main_data_dropdown">
+                                Message:
+                                <textarea class="main_data_dropdown_select" id="message" name="message" rows="4" cols="50" placeholder="Text smth"></textarea>
+                            </label>
+
+
+                            <label class="main_data_confirmation">
+                                <input class="main_data_confirmation_box" name="Box" type="checkbox" required>
+                                <span class="main_data_confirmation_box_line"></span>
+                                <span class="main_data_confirmation_text">
+                                Agree with our <a class="main_data_confirmation_text_color"
+                                                  href="#">Terms & Conditions</a>
+                            </span>
+                            </label>
+                            <button class="main_data_btn">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

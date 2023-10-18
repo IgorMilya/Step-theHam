@@ -98,6 +98,11 @@
     transition: 1s;
 }
 
+.active-link {
+    color: #18CFAB;
+}
+
+
 .header_title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -925,10 +930,17 @@
     padding: 48px 0;
     text-align: center;
     color: #AEAEAE;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_color {
     color: #18CFAB;
+}
+
+.footer_email {
+    color: #AEAEAE;
+    text-decoration: underline;
 }
 
 @keyframes loader {
@@ -953,4 +965,20 @@
     100% {
         opacity: 1;
     }
+}
+
+@keyframes rotateLetter {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header_navbar_icon_letter:hover {
+    animation: rotateLetter 2s linear infinite;
 }

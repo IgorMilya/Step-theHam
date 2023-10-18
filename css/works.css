@@ -1,0 +1,150 @@
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/*.header {*/
+/*    background: url("../img/background/section-1(header).jpg") fixed center no-repeat;*/
+/*    background-size: cover;*/
+/*    height: 1012px;*/
+/*    margin-bottom: 8px;*/
+/*}*/
+
+.header_navbar {
+    position: fixed;
+    background: rgba(94, 93, 88, 0.6);
+    width: 100%;
+}
+
+.header_navbar_add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+}
+
+.header_navbar_icon {
+    display: flex;
+    align-items: center;
+}
+
+.header_navbar_icon_letter {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    background: #18CFAB;
+    width: 58px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-right: 6px;
+
+}
+
+.header_navbar_icon_word {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.header_navbar_icon_word_color {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #18CFAB;
+}
+
+.header_navbar_list {
+    display: flex;
+    align-items: center;
+
+}
+
+.header_navbar_list_item {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 21px;
+}
+
+
+.header_navbar_list_item:last-child {
+    margin: 0;
+}
+
+.header_navbar_list_item_link {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header_navbar_list_item_link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #18CFAB;
+    bottom: -51px;
+    width: 0;
+}
+
+.header_navbar_list_item_link:hover:before {
+    width: 100%;
+    transition: .5s;
+}
+
+.header_navbar_list_item_link:hover {
+    color: #18CFAB;
+    transition: 1s;
+}
+
+
+.active-link {
+    color: #18CFAB;
+}
+
+.main_background3 {
+    background: url("../img/background/section-3.jpg") fixed center no-repeat;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.dark_block2 {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.e-document {
+    color: white;
+    text-decoration: underline;
+}
+
+@keyframes rotateLetter {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header_navbar_icon_letter:hover {
+    animation: rotateLetter 2s linear infinite;
+}
+
