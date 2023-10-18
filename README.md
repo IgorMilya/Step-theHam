@@ -1,1 +1,1 @@
-#Please take into account that this landing was calculated on a wide windows(monitors)
+# Please take into account that this landing was calculated on wide windows(monitors)
