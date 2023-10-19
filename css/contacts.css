@@ -126,7 +126,7 @@
 
 .center-block {
     width: 100%;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 5px);
     display: flex;
     justify-content: center;
     align-items: end;
@@ -181,7 +181,7 @@
 
 .main_data_label {
     margin-bottom: 15px;
-    width: 512px;
+    width: 522px;
 }
 
 .main_data_label:nth-child(5) {
@@ -236,7 +236,7 @@
 }
 
 
-.main_data_dropdown {
+.main_data_additional_input {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -244,6 +244,11 @@
     margin: 7px 0 7px 0;
     display: flex;
     flex-direction: column;
+    width: 522px;
+}
+
+.main_data_dropdown {
+    width: 544px;
 }
 
 .main_data_dropdown_select {
@@ -320,6 +325,11 @@
     text-decoration: underline;
 }
 
+.main_data_btn_group {
+    display: flex;
+    gap: 15px;
+}
+
 .main_data_btn {
     background: rgba(60, 184, 120, 0.8);
     border-radius: 4px;
@@ -330,11 +340,20 @@
     color: white;
     margin-bottom: 28px;
     cursor: pointer;
+    width: 100%;
 }
 
 .main_data_btn:hover {
     background: #01813F;
     transition: .5s;
+}
+
+.main_data_btn_red {
+    background: rgba(246, 5, 5, 0.8);
+}
+
+.main_data_btn_red:hover {
+    background: rgba(208, 24, 24, 0.8);
 }
 
 @keyframes rotateLetter {
